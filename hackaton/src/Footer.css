@@ -1,0 +1,19 @@
+.footer {
+  background: #bbadad;
+  display: flex;
+  justify-content: space-around;
+  height: 110px;
+}
+.logo {
+  margin-top: -50px;
+}
+.lien-MET {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  margin-top: 40px;
+  text-decoration: none;
+}
+a :hover {
+  color: #4c3636;
+}
