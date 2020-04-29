@@ -8,7 +8,7 @@ constructor(props){
   super(props);
 this.state = {
   arrObjets : ["test","deux"],
-  pays : 'italy',
+  pays : 'spain',
   periodeChecked: false,
   play: [],
   image : "",
@@ -69,11 +69,13 @@ image(){
 
   for(let i=0; i < 101; i++){
       let solution = this.state.imageArr[i];
-      this.timer = setTimeout(() => console.log(i), i*800)
+      this.timer = setTimeout(() => this.setState({imageSelect : i}), i*10000)
 
   }
 
 console.log("end")
+const { periodeChecked: isChecked } = this.state;
+this.setState({ periodeChecked: !isChecked });
 }
 
 render(){
@@ -86,8 +88,8 @@ render(){
 
     <button type="bouton" onClick={this.image}> Send </button>
 {this.state.periodeChecked
-  ?<div><p>{this.state.imageSelect}</p>
-      <img className="pitchoune" src={this.state.imageSelect} alt={this.state.imageSelect} /></div>
+  ?<div><p>Accrochez vous !</p>
+      <img className="pitchoune" src={this.state.imageArr[this.state.imageSelect]} alt={this.state.imageSelect} /></div>
 : null}
   </div>
 )

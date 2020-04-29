@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Search from './search.js';
 function App() {
   return (
     <div className="App">
-    
+    <Search />
     </div>
   );
 }
