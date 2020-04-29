@@ -1,0 +1,14 @@
+.navbar {
+  background: #bbadad;
+  display: flex;
+  justify-content: space-around;
+  height: 110px;
+}
+.logo {
+  margin-top: -50px;
+}
+.text-description {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
