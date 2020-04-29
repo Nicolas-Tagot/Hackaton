@@ -69,24 +69,19 @@ image(){
 
   for(let i=0; i < 101; i++){
       let solution = this.state.imageArr[i];
-      this.timer = setTimeout(() => this.setState({imageSelect : i}), i*10000)
-
+      this.timer = setTimeout(() => this.setState({imageSelect : i}), i*1000)
   }
-
-console.log("end")
-const { periodeChecked: isChecked } = this.state;
-this.setState({ periodeChecked: !isChecked });
+  console.log("end")
+  const { periodeChecked: isChecked } = this.state;
+  this.setState({ periodeChecked: !isChecked });
 }
 
 render(){
 
   return(
   <div>
-  <button type="button" onClick={this.show}> Charge </button>
-
-
-
-    <button type="bouton" onClick={this.image}> Send </button>
+  <div className="btn" onClick={this.show}> Charge </div>
+  <div className="btn" onClick={this.image}> Send </div>
 {this.state.periodeChecked
   ?<div><p>Accrochez vous !</p>
       <img className="pitchoune" src={this.state.imageArr[this.state.imageSelect]} alt={this.state.imageSelect} /></div>

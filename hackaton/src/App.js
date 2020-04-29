@@ -9,7 +9,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Searchbar />
+      <div>
       <Search />
+      </div>
       <Footer />
     </div>
   );
