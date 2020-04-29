@@ -1,9 +1,16 @@
 import React from 'react';
-import Search from './search.js';
+import Searchbar from './Searchbar';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import Search from "./search";
+
 function App() {
   return (
     <div className="App">
-    <Search />
+      <Navbar />
+      <Searchbar />
+      <Search />
+      <Footer />
     </div>
   );
 }

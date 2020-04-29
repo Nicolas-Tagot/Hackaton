@@ -1,0 +1,21 @@
+.footer {
+  background: #bbadad;
+  display: flex;
+  justify-content: space-around;
+  height: 110px;
+}
+.logofoot {
+  margin-top: -50px;
+}
+.lienMET {
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+}
+a {
+  color: white;
+  font-size: 20px;
+}
+a:hover {
+  color: #4c3636;
+}
