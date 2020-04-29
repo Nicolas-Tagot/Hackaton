@@ -10,7 +10,9 @@ function Footer() {
           alt="logo"
         ></img>
       </div>
-      <div className="lien-MET">
+      <div className="lienMET">
+        <p>Pour rejoindre le site officiel du musée, cliquez ici :</p>
+        <div></div>
         <a href="https://www.metmuseum.org/">MET Museum</a>
       </div>
     </div>
