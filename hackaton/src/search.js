@@ -69,7 +69,7 @@ image(){
 
   for(let i=0; i < 101; i++){
       let solution = this.state.imageArr[i];
-      this.timer = setTimeout(() => console.log(i), i*100)
+      this.timer = setTimeout(() => console.log(i), i*800)
 
   }
 
