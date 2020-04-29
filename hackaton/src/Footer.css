@@ -3,6 +3,8 @@
   display: flex;
   justify-content: space-around;
   height: 110px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .logofoot {
   margin-top: -50px;
