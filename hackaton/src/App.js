@@ -1,7 +1,11 @@
 import React from 'react';
 import Searchbar from './Searchbar';
+import ListObjects from './ListObjects';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import SearchTitle from './SearchTitle';
+import ImageAccueil from './ImageAccueil';
+import Search from './search';
 
 
 class App extends React.Component{
@@ -23,9 +27,10 @@ render(){
   return (
     <div className="App">
       <Navbar />
+      <ImageAccueil />
+      <SearchTitle />
       <Searchbar />
-      <div>
-        </div>
+      <ListObjects />
       <Footer />
     </div>
   );

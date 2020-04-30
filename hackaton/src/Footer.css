@@ -3,6 +3,8 @@
   display: flex;
   justify-content: space-around;
   height: 110px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .logofoot {
   margin-top: -50px;
@@ -12,10 +14,10 @@
   color: white;
   text-align: center;
 }
-a {
+.lienmusee {
   color: white;
   font-size: 20px;
 }
-a:hover {
+.lienmusee:hover {
   color: #4c3636;
 }
