@@ -11,11 +11,11 @@ function App() {
     <div className="App">
       <Navbar />
       <ImageAccueil />
-      <SearchTitle />
       <Searchbar />
       <div>
         <Search />
       </div>
+      <SearchTitle />
       <Footer />
     </div>
   );

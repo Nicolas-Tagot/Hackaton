@@ -1,14 +1,27 @@
 .searchbar-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    border: solid;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  padding: 10px;
 }
 
 button {
-    margin-top: 10px;
-    height: 40px;
-    width: 100px;
+  border-radius: 12px 0 12px 0;
+  background: #bbadad;
+  border: none;
+  font: bold 12px;
+  padding: 6px 0 6px 0;
+  box-shadow: 1px 1px 3px #999;
+  margin-top: 10px;
+  width: 100px;
+}
+
+.champrech {
+  border-radius: 40px;
+  width: 250px;
+  height: 30px;
+  border-color: black;
+  padding-left: 15px;
+  padding-right: 15px;
 }

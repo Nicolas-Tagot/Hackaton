@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import './Searchbar.css';
 //import axios from "axios";
 
 const testArr = [
-  { title: "Mug", country: "UK", image: "some url" },
-  { title: "Spoon", country: "France", image: "some url" },
-  { title: "Vineyard", country: "Italy", image: "some url" },
+  { title: 'Mug', country: 'UK', image: 'some url' },
+  { title: 'Spoon', country: 'France', image: 'some url' },
+  { title: 'Vineyard', country: 'Italy', image: 'some url' },
 ];
 
 class Searchbar extends Component {
@@ -13,31 +13,31 @@ class Searchbar extends Component {
     super(props);
     this.state = {
       listCountry: testArr,
-      defaultInput: "Pays",
+      defaultInput: 'Pays',
     };
   }
 
-//  handleClick() {
-//    
-//  }
-  
+  //  handleClick() {
+  //
+  //  }
+
   render() {
     return (
       <div className="searchbar-container">
-        <h3>Ou voulez vous aller ?</h3>
-        <label htmlFor="country">Pays : </label>
+        <h3>Saisissez le pays dans lequel vous souhaitez partir :</h3>
         <input
           id="country"
           type="text"
           placeholder={this.defaultInput}
           list="data-country"
+          className="champrech"
         />
         <datalist id="data-country">
-         {this.state.listCountry.map((item, key) => (
-           <option key={key} value={item.country} />
-         ))}
-       </datalist>
-       <button /*onClick={this.handleClick()}*/>Go !</button>
+          {this.state.listCountry.map((item, key) => (
+            <option key={key} value={item.country} />
+          ))}
+        </datalist>
+        <button /*onClick={this.handleClick()}*/>Go !</button>
       </div>
     );
   }
