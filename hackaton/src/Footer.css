@@ -2,13 +2,11 @@
   background: #bbadad;
   display: flex;
   justify-content: space-around;
-  height: 110px;
+  height: 130px;
   margin-left: 10%;
   margin-right: 10%;
 }
-.logofoot {
-  margin-top: -50px;
-}
+
 .lienMET {
   margin-top: 10px;
   color: white;
