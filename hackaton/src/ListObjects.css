@@ -1,0 +1,20 @@
+.objectsList {
+    display: flex;
+    width: 100%;
+}
+
+.object {
+    display: flex;
+    margin-top: 25px;
+    border: solid;
+}
+
+img {
+    height: 50px;
+    width: auto;
+    margin-right: 50px;
+}
+
+a {
+    margin-left: 50 px;
+}

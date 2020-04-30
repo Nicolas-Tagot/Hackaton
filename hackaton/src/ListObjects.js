@@ -1,37 +1,31 @@
-import react, { Component } from "react";
+import React, { Component } from "react";
+import './ListObjects.css';
 
 const testArr = [
-  { title: "Mug", country: "UK", image: "some url" },
-  { title: "Spoon", country: "France", image: "some url" },
-  { title: "Vineyard", country: "Italy", image: "some url" },
+  { title: "Mug", primaryImageSmall: "UK", objectURL: "some url" },
+  { title: "Ladle", primaryImageSmall: "https://images.metmuseum.org/CRDImages/eg/web-large/12.187.29_EGDP012151.jpg", objectURL: "https://www.metmuseum.org/art/collection/search/570825" },
+  { title: "Vineyard", primaryImageSmall: "Italy", objectURL: "some url" },
 ];
 
-function ListObjects(props) {
-  function getTheObjects(testArr) {
-    return testArr.map((objet) => {
-      <div>
-        <li>{objet.image}</li>
-        <li>{object.title}</li>
-        <li>{object.country}</li>
-      </div>;
-    });
+class ListObjects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      listObjects: testArr,
+    };
   }
 
-  return <ul>{getTheObjects}</ul>;
-}
+  render () {
+    const newArr = testArr.map((object) => (
+      <li className="object"><img src={object.primaryImageSmall} alt={object.title}></img> {object.title} <a href={object.objectURL}>lien</a></li>
+    ))
 
-// //     return <li>{props.value}</li>;
-// //   }
-// //   function Objects(props) {
-// //     const numbers = props.numbers;
-// //     const listItems = numbers.map((number) =>
-// //       // Correct ! La clé doit être spécifiée dans le tableau.
-// //       <ListObjects key={number.toString()}              value={number} />
-// //     );
-// //     return (
-// //       <ul>
-// //         {listItems}
-// //       </ul>
-// //     );
+    return (
+      <ul className="objectsContainer">
+        {newArr}
+      </ul>
+    )
+    }
+}
 
 export default ListObjects;
