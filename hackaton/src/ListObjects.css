@@ -1,20 +1,19 @@
-.objectsList {
-    display: flex;
-    width: 100%;
+.objectsContainer {
+    display: inline-flex;
 }
 
-.object {
+.objectList {
     display: flex;
     margin-top: 25px;
     border: solid;
 }
 
-img {
+.imageSmall {
     height: 50px;
     width: auto;
     margin-right: 50px;
 }
 
-a {
+.linkObject {
     margin-left: 50 px;
 }

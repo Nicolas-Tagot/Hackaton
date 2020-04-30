@@ -17,11 +17,11 @@ class ListObjects extends Component {
 
   render () {
     const newArr = testArr.map((object) => (
-      <li className="object"><img src={object.primaryImageSmall} alt={object.title}></img> {object.title} <a href={object.objectURL}>lien</a></li>
+      <li className="objectList"><img className="imageSmall" src={object.primaryImageSmall} alt={object.title}></img> {object.title} <a className="linkObject" href={object.objectURL}>lien</a></li>
     ))
 
     return (
-      <ul className="objectsContainer">
+      <ul className="objectContainer">
         {newArr}
       </ul>
     )
