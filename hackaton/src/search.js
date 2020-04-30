@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import "./search.css";
-
+import "./load.gif";
 
 class Search extends React.Component {
 constructor(props){
@@ -62,7 +62,7 @@ suit(){
           this.definition = res.data;
           this.definition = this.definition.objectDate;
           this.state.defArr.push(this.definition);
-          console.log(this.definition);
+      
 
         })
       ));
@@ -99,7 +99,7 @@ render(){
       <img className="pitchoune" src={this.state.imageArr[this.state.imageSelect]} alt={this.state.imageSelect} />
       <p>date : "{this.state.defArr[this.state.imageSelect]}"</p>
       </div>
-: null}
+: <img src="https://flevix.com/wp-content/uploads/2019/07/Ring-Preloader.gif" />}
   </div>
 )
 }
