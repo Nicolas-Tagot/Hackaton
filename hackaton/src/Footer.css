@@ -14,10 +14,10 @@
   color: white;
   text-align: center;
 }
-a {
+.lienmusee {
   color: white;
   font-size: 20px;
 }
-a:hover {
+.lienmusee:hover {
   color: #4c3636;
 }
