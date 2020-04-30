@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import "./search.css";
-import "./load.gif";
+
 
 class Search extends React.Component {
 constructor(props){
@@ -58,11 +58,10 @@ suit(){
           this.image = res.data;
           this.image = this.image.primaryImageSmall;
           this.state.imageArr.push(this.image);
-
           this.definition = res.data;
           this.definition = this.definition.objectDate;
           this.state.defArr.push(this.definition);
-      
+
 
         })
       ));
