@@ -42,7 +42,7 @@ class Searchbar extends Component {
   render() {
     return (
       <div className="searchbar-container">
-        <h3>Bougez vous les fesses et saisissez un pays :</h3>
+        <h3>Ne bougez plus et laissez vous porter dans le temps</h3>
 
         <input
           type="text"
@@ -50,6 +50,7 @@ class Searchbar extends Component {
           onChange={this.eventer}
           list="data-country"
           className="inputsearch"
+          placeholder="Saisissez un pays"
         />
 
         <datalist id="data-country">
@@ -58,12 +59,8 @@ class Searchbar extends Component {
           ))}
         </datalist>
 
-        <button
-          className="buttonsearch"
-          placeholder="Go !"
-          onClick={() => this.handleClick()}
-        >
-          {this.state.value}
+        <button className="buttonsearch" onClick={() => this.handleClick()}>
+          Go {this.state.value}
         </button>
 
         {this.state.affiche ? <Search paysSellect={this.state.value} /> : null}

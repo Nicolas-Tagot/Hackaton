@@ -14,6 +14,10 @@ function Navbar() {
         <p>Continuez de voyager et de vous cultiver</p>
         <div></div>
         <p>depuis votre canapé !</p>
+        <div></div>
+        <p className="phraseNico">
+          ou comment rester sans rien faire sans rester bête
+        </p>
       </div>
     </div>
   );
