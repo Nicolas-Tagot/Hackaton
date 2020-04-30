@@ -15,6 +15,9 @@ this.state = {
   imageArr : [],
   imageSelect: 0,
   timer : 0,
+  definition : [],
+  defArr : []
+
 };
 this.show = this.show.bind(this);
 this.showSui = this.showSui.bind(this);
@@ -55,6 +58,12 @@ suit(){
           this.image = res.data;
           this.image = this.image.primaryImageSmall;
           this.state.imageArr.push(this.image);
+
+          this.definition = res.data;
+          this.definition = this.definition.objectDate;
+          this.state.defArr.push(this.definition);
+          console.log(this.definition);
+
         })
       ));
 
@@ -87,7 +96,9 @@ render(){
 
 {this.state.periodeChecked
   ?<div><p>Accrochez vous !</p>
-      <img className="pitchoune" src={this.state.imageArr[this.state.imageSelect]} alt={this.state.imageSelect} /></div>
+      <img className="pitchoune" src={this.state.imageArr[this.state.imageSelect]} alt={this.state.imageSelect} />
+      <p>date : "{this.state.defArr[this.state.imageSelect]}"</p>
+      </div>
 : null}
   </div>
 )
