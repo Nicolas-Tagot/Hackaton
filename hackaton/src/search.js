@@ -24,7 +24,7 @@ this.imagere = this.imagere.bind(this);
 
 
   componentDidMount() {
-    axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${this.state.pays}`)
+    axios.get(`https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${this.props.paysSellect}`)
       .then(res => {
          this.arrObjets = res.data;
         console.log(this.arrObjets)
@@ -78,10 +78,13 @@ imagere(){
   this.setState({ periodeChecked: !isChecked });
 }
 
+
+
 render(){
 
     return(
   <div>
+
 {this.state.periodeChecked
   ?<div><p>Accrochez vous !</p>
       <img className="pitchoune" src={this.state.imageArr[this.state.imageSelect]} alt={this.state.imageSelect} /></div>
