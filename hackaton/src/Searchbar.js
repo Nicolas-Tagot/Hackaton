@@ -52,7 +52,7 @@ this.eventer=this.eventer.bind(this);
         <h3>Ou voulez vous aller ?</h3>
         <label htmlFor="country">Pays : </label>
 
-        <input type="text" value={this.state.value} onChange={this.eventer} />
+        <input type="text" value={this.state.value} onChange={this.eventer} list="data-country"/>
 
         <datalist id="data-country">
          {this.state.listCountry.map((item, key) => (
@@ -69,3 +69,26 @@ this.eventer=this.eventer.bind(this);
 }
 
 export default Searchbar;
+
+
+// render() {
+//   return (
+//     <div className="searchbar-container">
+//       <h3>Ou voulez vous aller ?</h3>
+//       <label htmlFor="country">Pays : </label>
+//       <input
+//         id="country"
+//         type="text"
+//         placeholder={this.defaultInput}
+//         list="data-country"
+//       />
+//       <datalist id="data-country">
+//        {this.state.listCountry.map((item, key) => (
+//          <option key={key} value={item.country} />
+//        ))}
+//      </datalist>
+//      <button /*onClick={this.handleClick()}*/>Go !</button>
+//     </div>
+//   );
+// }
+// }
