@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 
-class SearchTitle extends React.Component {
+const testArr2 = [
+  { title: 'Wheat Field with Cypresses' },
+  { title: 'Skaters' },
+  { title: 'Epigonation (Palitsa)' },
+];
+class SearchTitle extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      listTitle: [],
+      listTitle: testArr2,
       title: '',
     };
     this.handleChange = this.handleChange.bind(this);
@@ -20,6 +25,7 @@ class SearchTitle extends React.Component {
   }
   loadTitle() {
     axios
+      /* Rentrer l'URL pour appel API */
       .get(
         `https://collectionapi.metmuseum.org/public/collection/v1/search?q={$title}`
       )
