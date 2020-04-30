@@ -1,14 +1,27 @@
 .searchbar-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    border: solid;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  padding: 10px;
+}
+.inputsearch {
+  border-radius: 100px;
+  width: 300px;
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-button {
-    margin-top: 10px;
-    height: 40px;
-    width: 100px;
+.buttonsearch {
+  margin-top: 10px;
+  height: 40px;
+  width: 100px;
+  padding: 6px 0 6px 0;
+  border-radius: 2px;
+  box-shadow: 3px 3px 12px #999;
+  font: bold 13px Arial;
+  color: black;
+  background-color: #bbadad;
+  margin-bottom: 20px;
 }

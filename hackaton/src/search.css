@@ -1,16 +1,4 @@
-.pitchoune{
-  width: 400px;
-
-}
-
-.btn{
-  width: 80px;
-  background-color: green;
-  border-radius: 8px;
-  text-align: center;
-  margin: 20px;
-  padding: 30px;
-}
-.btn:hover{
-  background-color: grey;
+.pitchoune {
+  width: auto;
+  height: 500px;
 }
