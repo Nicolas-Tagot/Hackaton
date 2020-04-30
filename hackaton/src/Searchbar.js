@@ -4,10 +4,20 @@ import Search from "./search";
 //import axios from "axios";
 
 const testArr = [
-  { title: "Mug", country: "UK", image: "some url" },
-  { title: "Spoon", country: "France", image: "some url" },
-  { title: "Vineyard", country: "Italy", image: "some url" },
+  { country: "France" },
+  { country: "Spain" },
+  { country: "Portugal" },
+  { country: "Brasil" },
+  { country: "Argentina" },
+  { country: "England" },
+  { country: "Scotland" },
+  { country: "Germany" },
+  { country: "Poland" },
+  { country: "Sweden" },
+  { country: "Ireland" },
 ];
+
+
 
 class Searchbar extends Component {
   constructor(props) {
