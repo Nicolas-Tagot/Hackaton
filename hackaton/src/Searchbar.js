@@ -60,7 +60,7 @@ this.eventer=this.eventer.bind(this);
          ))}
        </datalist>
 
-       <button onClick={() => this.handleClick()}>{this.state.value}</button>
+       <button onClick={() => this.handleClick()}>Ok !</button>
 
        {this.state.affiche ?  <Search paysSellect={this.state.value} /> : null }
       </div>
